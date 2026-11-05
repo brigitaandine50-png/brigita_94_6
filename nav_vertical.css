@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:rgb(215, 146, 244);
+    border: 1px solid #c564f6;
+    position: fixed;
+    height: 100%;
+}
+li a{
+    display: block;
+    color: #984e08;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li{
+    text-align: center;
+    border-bottom: 1px solid #6cd6fc;
+}
+li a.active{
+    background-color: #f566c8;
+    color: rgb(27, 18, 18);
+}
+li a:hover:not(.active){
+    background-color: #f47ad4;
+    color: rgb(27, 18, 18);
+}

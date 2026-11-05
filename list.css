@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f0ff;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    background-color: #24104f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    letter-spacing: 3px;
+}
+
+/* NAVIGATION */
+.topnav {
+    background-color: #39216b;
+    text-align: center;
+    overflow: hidden;
+}
+
+.topnav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 16px 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #a78bfa;
+    color: #24104f;
+}
+
+/* CONTAINER */
+.container {
+    background-color: #e9967a;
+    width: 90%;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+/* JUDUL */
+h3 {
+    color: #24104f;
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+/* DAFTAR BUAH */
+.buah {
+    background-color: #8a2be2;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.buah ol {
+    padding-left: 25px;
+}
+
+.buah li {
+    background-color: rgb(255, 89, 47);
+    color: #24104f;
+    padding: 9px;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.buah li:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+/* LOREM IPSUM */
+.lorem {
+    background-color: #e176f4;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.lorem ul {
+    padding-left: 20px;
+}
+
+.lorem li {
+    background-color: pink;
+    color: #333;
+    padding: 10px;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.lorem li:hover {
+    background-color: #ffb6c1;
+    cursor: pointer;
+}
+
+/* ICON */
+.icons {
+    background-color: #77b98b;
+    padding: 15px;
+}
+
+.icons ul {
+    padding-left: 20px;
+}
+
+.icons li {
+    background-color: #fff0c9;
+    color: #39216b;
+    padding: 15px;
+    margin: 8px 0;
+    list-style-type: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.icons li:hover {
+    background-color: #d9c4f5;
+    transform: translateX(8px);
+    cursor: pointer;
+}
+
+.icons i {
+    font-size: 25px;
+    width: 40px;
+    margin-right: 12px;
+    color: #7044a1;
+    transition: 0.3s;
+}
+
+.icons li:hover i {
+    color: #39216b;
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #24104f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

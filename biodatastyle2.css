@@ -1,0 +1,835 @@
+body{
+    background-image: url("coolblackbg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    background-color: rgb(49, 18, 64);
+    color: rgb(242, 242, 245);
+    text-align: center;
+}
+
+h1{
+    background-color: rgba(5, 13, 101, 0.872);
+    color: rgba(239, 234, 234, 0);
+    text-align: center;
+}
+
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgb(45, 10, 74);
+    color: rgb(244, 212, 228);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid hotpink;
+}
+
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto:hover img.top{
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+.foto:hover img.bottom{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* MAKANAN FAVORIT */
+
+div.makanan{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+
+/* KOTAK MAKANAN */
+
+div.bakmie-babi,
+div.nasi-goreng,
+div.ikan-sambal-matah,
+div.sate-padang,
+div.daging-babi{
+    width: 240px;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: lightcoral;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+
+/* GAMBAR */
+
+div.bakmie-babi img,
+div.nasi-goreng img,
+div.ikan-sambal-matah img,
+div.sate-padang img,
+div.daging-babi img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+
+/* NAMA MAKANAN */
+
+div.bakmie-babi p,
+div.nasi-goreng p,
+div.ikan-sambal-matah p,
+div.sate-padang p,
+div.daging-babi p{
+    transition: transform 0.5s ease, letter-spacing 0.5s ease;
+
+    color:white
+}
+
+
+/* HOVER */
+
+div.bakmie-babi:hover,
+div.nasi-goreng:hover,
+div.ikan-sambal-matah:hover,
+div.sate-padang:hover,
+div.daging-babi:hover{
+    transform: translateY(-15px) rotate(-2deg);
+    box-shadow: 0 15px 25px black;
+}
+
+
+/* GAMBAR IKUT BERGERAK */
+
+div.bakmie-babi:hover img,
+div.nasi-goreng:hover img,
+div.ikan-sambal-matah:hover img,
+div.sate-padang:hover img,
+div.daging-babi:hover img{
+    transform: scale(1.12) rotate(2deg);
+    filter: brightness(0.75);
+}
+
+
+/* TEKS IKUT BERGERAK */
+
+div.bakmie-babi:hover p,
+div.nasi-goreng:hover p,
+div.ikan-sambal-matah:hover p,
+div.sate-padang:hover p,
+div.daging-babi:hover p{
+    transform: translateY(-5px);
+    letter-spacing: 2px;
+}
+/* LAGU FAVORIT */
+
+div.lagu{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+
+/* KOTAK LAGU */
+
+div.MMG,
+div.I-Love-You-So,
+div.Location-Unknown,
+div.Magic-Shop,
+div.Teh-Hijau{
+    width: 240px;
+    height: 270px;
+    border-radius: 20px;
+    background-color: lightblue;
+    box-shadow: 0 4px 8px black;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+
+/* GAMBAR LAGU */
+
+div.MMG img,
+div.I-Love-You-So img,
+div.Location-Unknown img,
+div.Magic-Shop img,
+div.Teh-Hijau img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.6s ease;
+}
+
+
+/* JUDUL LAGU */
+
+div.MMG p,
+div.I-Love-You-So p,
+div.Location-Unknown p,
+div.Magic-Shop p,
+div.Teh-Hijau p{
+    color: white;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+
+/* HOVER KARTU */
+
+div.MMG:hover,
+div.I-Love-You-So:hover,
+div.Location-Unknown:hover,
+div.Magic-Shop:hover,
+div.Teh-Hijau:hover{
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 0 25px cyan;
+    background-color: darkslateblue;
+}
+
+
+/* HOVER GAMBAR */
+
+div.MMG:hover img,
+div.I-Love-You-So:hover img,
+div.Location-Unknown:hover img,
+div.Magic-Shop:hover img,
+div.Teh-Hijau:hover img{
+    transform: scale(1.08) rotate(3deg);
+    filter: brightness(0.7);
+}
+
+
+/* HOVER JUDUL */
+
+div.MMG:hover p,
+div.I-Love-You-So:hover p,
+div.Location-Unknown:hover p,
+div.Magic-Shop:hover p,
+div.Teh-Hijau:hover p{
+    transform: translateY(-8px);
+    letter-spacing: 1px;
+}
+
+div.bakmie-babi{
+    width: 240px;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(167, 214, 234);
+    margin-bottom: 25px;
+    background-color: rgb(2, 7, 115);
+}
+
+div.nasi-goreng{
+    width: 240px;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(154, 239, 245);
+    margin-bottom: 25px;
+    background-color: rgb(17, 2, 113);
+}
+
+div.ikan-sambal-matah{
+    width: 240px;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(165, 238, 247);
+    margin-bottom: 25px;
+    background-color: rgb(21, 1, 91);
+}
+
+div.sate-padang{
+    width: 240px;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(171, 231, 247);
+    margin-bottom: 25px;
+     background-color: rgb(29, 1, 112);
+}
+
+div.daging-babi{
+    width: 240px;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(182, 228, 239);
+    margin-bottom: 25px;
+    background-color: rgb(38, 3, 126);
+}
+/* =========================
+   LAGU FAVORIT
+   ========================= */
+
+div.lagu{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+
+/* KOTAK LAGU */
+
+div.MMG,
+div.I-Love-You-So,
+div.Location-Unknown,
+div.Magic-Shop,
+div.Teh-Hijau{
+    width: 240px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgb(5, 38, 159);
+    box-shadow: 0 4px 8px black;
+    overflow: hidden;
+    padding-top: 15px;
+    transition: 0.5s ease;
+}
+
+
+/* PIRINGAN HITAM */
+
+div.vinyl{
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px black;
+}
+
+
+/* GARIS-GARIS PIRINGAN */
+
+div.vinyl::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+div.vinyl::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+
+/* GAMBAR ALBUM DI TENGAH */
+
+div.vinyl img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    transition: 0.5s ease;
+}
+
+
+/* TITIK TENGAH PIRINGAN */
+
+div.vinyl img::after{
+    content: "";
+}
+
+
+/* NAMA LAGU */
+
+div.MMG p,
+div.I-Love-You-So p,
+div.Location-Unknown p,
+div.Magic-Shop p,
+div.Teh-Hijau p{
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.5s ease;
+}
+
+
+/* HOVER KARTU */
+
+div.MMG:hover,
+div.I-Love-You-So:hover,
+div.Location-Unknown:hover,
+div.Magic-Shop:hover,
+div.Teh-Hijau:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 0 25px rgb(237, 62, 229);
+    background-color: darkslateblue;
+}
+
+
+/* PIRINGAN MUTER SAAT HOVER */
+
+div.MMG:hover .vinyl,
+div.I-Love-You-So:hover .vinyl,
+div.Location-Unknown:hover .vinyl,
+div.Magic-Shop:hover .vinyl,
+div.Teh-Hijau:hover .vinyl{
+    animation: muter 2s linear infinite;
+}
+
+
+/* GAMBAR TENGAH IKUT MEMBESAR */
+
+div.MMG:hover .vinyl img,
+div.I-Love-You-So:hover .vinyl img,
+div.Location-Unknown:hover .vinyl img,
+div.Magic-Shop:hover .vinyl img,
+div.Teh-Hijau:hover .vinyl img{
+    transform: scale(1.08);
+}
+
+
+/* TEKS IKUT NAIK */
+
+div.MMG:hover p,
+div.I-Love-You-So:hover p,
+div.Location-Unknown:hover p,
+div.Magic-Shop:hover p,
+div.Teh-Hijau:hover p{
+    transform: translateY(-5px);
+    letter-spacing: 1px;
+}
+
+
+/* ANIMASI PIRINGAN */
+
+@keyframes muter{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+div.animals{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+}
+
+div.serigala,
+div.macan,
+div.puma,
+div.Doberman,
+div.snake{
+    flex: 0 0 200px;
+    width: 200px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 0 5px 12px black;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+div.serigala img,
+div.macan img,
+div.puma img,
+div.Doberman img,
+div.snake img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+div.serigala p,
+div.macan p,
+div.puma p,
+div.Doberman p,
+div.snake p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+div.serigala:hover,
+div.macan:hover,
+div.puma:hover,
+div.Doberman:hover,
+div.snake:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 12px 25px black;
+}
+
+div.serigala:hover img,
+div.macan:hover img,
+div.puma:hover img,
+div.Doberman:hover img,
+div.snake:hover img{
+    transform: scale(1.12);
+    filter: brightness(0.65);
+}
+
+div.serigala:hover p,
+div.macan:hover p,
+div.puma:hover p,
+div.Doberman:hover p,
+div.snake:hover p{
+    transform: translateY(0);
+}
+.judul-hewan{
+    background-color: darkorchid;
+    color: white;
+    text-align: center;
+    width: 350px;
+    margin: 40px auto 30px auto;
+    padding: 10px;
+}
+
+div.animals{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+div.serigala,
+div.macan,
+div.puma,
+div.Doberman,
+div.snake{
+    width: 240px;
+    height: 270px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+/* =========================
+   HOBBIES
+   ========================= */
+
+div.hobbies{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+
+/* KARTU HOBI */
+
+div.pencak-silat,
+div.listening-music,
+div.sleeping,
+div.watching-movies,
+div.hanging-out{
+    width: 240px;
+    height: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background-color: #D8B4E2;
+    box-shadow: 0 4px 8px black;
+    flex-shrink: 0;
+    transition: 0.5s ease;
+}
+
+
+/* GAMBAR */
+
+div.pencak-silat img,
+div.listening-music img,
+div.sleeping img,
+div.watching-movies img,
+div.hanging-out img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+
+/* INFORMASI HOBI */
+
+div.hobi-info{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+
+/* JUDUL */
+
+div.hobi-info h3{
+    margin: 0 0 8px 0;
+    font-size: 20px;
+}
+
+
+/* DESKRIPSI */
+
+div.hobi-info p{
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* HOVER KARTU */
+
+div.pencak-silat:hover,
+div.listening-music:hover,
+div.sleeping:hover,
+div.watching-movies:hover,
+div.hanging-out:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 12px 25px black;
+}
+
+
+/* GAMBAR JADI GELAP */
+
+div.pencak-silat:hover img,
+div.listening-music:hover img,
+div.sleeping:hover img,
+div.watching-movies:hover img,
+div.hanging-out:hover img{
+    transform: scale(1.08);
+    filter: brightness(0.55);
+}
+
+
+/* INFO MUNCUL DARI BAWAH */
+
+div.pencak-silat:hover .hobi-info,
+div.listening-music:hover .hobi-info,
+div.sleeping:hover .hobi-info,
+div.watching-movies:hover .hobi-info,
+div.hanging-out:hover .hobi-info{
+    transform: translateY(0);
+}
+/* =========================
+   DEKORASI SPOOKY
+   ========================= */
+
+.deco{
+    position: fixed;
+    z-index: 0;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+
+/* STARS - KIRI ATAS */
+
+.deco-stars{
+    width: 80px;
+    top: 10%;
+    left: 3%;
+    animation: starsGlow 2s ease-in-out infinite;
+}
+
+
+/* SPIDERWEB - KANAN ATAS */
+
+.deco-spiderweb{
+    width: 130px;
+    top: 0;
+    right: 0;
+    animation: webMove 4s ease-in-out infinite;
+}
+
+
+/* SKELETON - KIRI BAWAH */
+
+.deco-skeleton{
+    width: 100px;
+    bottom: 5%;
+    left: 3%;
+    animation: skeletonMove 3s ease-in-out infinite;
+}
+
+
+/* BAT - KANAN BAWAH */
+
+.deco-bat{
+    width: 90px;
+    bottom: 12%;
+    right: 4%;
+    animation: batFly 4s ease-in-out infinite;
+}
+
+
+/* =========================
+   STARS BERKEDIP
+   ========================= */
+
+@keyframes starsGlow{
+
+    0%{
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    50%{
+        transform: scale(1.15);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+}
+
+
+/* =========================
+   SPIDERWEB BERGERAK
+   ========================= */
+
+@keyframes webMove{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(3deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+
+
+/* =========================
+   SKELETON GOYANG
+   ========================= */
+
+@keyframes skeletonMove{
+
+    0%{
+        transform: rotate(-4deg);
+    }
+
+    50%{
+        transform: rotate(4deg) translateY(-8px);
+    }
+
+    100%{
+        transform: rotate(-4deg);
+    }
+
+}
+
+
+/* =========================
+   BAT TERBANG
+   ========================= */
+
+@keyframes batFly{
+
+    0%{
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25%{
+        transform: translate(-15px, -10px) rotate(-5deg);
+    }
+
+    50%{
+        transform: translate(-30px, 0) rotate(0deg);
+    }
+
+    75%{
+        transform: translate(-15px, 10px) rotate(5deg);
+    }
+
+    100%{
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+}
